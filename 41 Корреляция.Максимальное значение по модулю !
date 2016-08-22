@@ -1,0 +1,23 @@
+library(psych)
+
+df1  <- mtcars
+df_numeric  <- df1[, c(1,5)]
+#fit  <- corr.test(df_numeric)
+fit <- cor.test(x = df_numeric$mpg, y = df_numeric$drat)
+#str(fit)
+print(fit$estimate)
+print(fit$p.value)
+
+library(psych)
+
+df1  <- iris
+df_numeric  <- df1[, c(1:2)]
+
+res <- c(df1[,c(1)])
+#fit  <- corr.test(df_numeric)
+fit <- cor.test(x = df_numeric$Sepal.Length, y = df_numeric$Sepal.Width)
+#str(fit)
+print(fit$estimate)
+print(fit$p.value)
+
+----------------------------------

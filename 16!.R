@@ -1,0 +1,10 @@
+library(ggplot2)
+mydata <- diamonds
+#fem <- table(mydata$price,mydata$carat)
+#rez<- c(chisq.test(fem))
+factor_price <-ifelse(mydata$price >= mean(mydata$price),1,0)
+factor_carat <-ifelse(mydata$carat >= mean(mydata$carat),1,0)
+#print(rez$statistic)
+fem <-table(factor_price,factor_carat)
+rez <-chisq.test(fem)
+print(rez$statistic)

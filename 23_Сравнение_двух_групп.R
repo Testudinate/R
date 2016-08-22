@@ -1,0 +1,7 @@
+df <- read.table("c:\\dataset_11504_15.txt")
+str(df)
+mez <- bartlett.test (df, V1~V2)
+#print(mez$p.value)
+#rez <-t.test(df$V1,df$v2,paired = T)
+rez <- wilcox.test (df$V1~df$V2)
+print(rez$p.value)

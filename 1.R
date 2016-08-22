@@ -1,0 +1,13 @@
+df <- mtcars
+#per <-c(df$cyl!=3 & df$mpg>20)
+#del <-c(subset(df,per,qsec))
+#sr <- mean(df$qsec(df$cyl!=3 & df$mpg>20))
+#print(mean(c(del))
+#print(mean(dfqsec <- df$qsec[df$cyl!=3 & df$mpg>20]))
+#aggregate(x = df$hp, by = list(df$vs), FUN = mean)
+#aggregate( hp + disp ~ vs, df, sd)
+#aggregate( hp + disp ~ am  , df, sd)
+#aggregate( am ~ hp + disp, df, sd)
+#aggregate( disp ~ hp + am , df, sd)
+#aggregate(x = df$am, by = list(df$hp,df$disp),FUN = sd)
+#aggregate(df[,c(3,4)], by = list(df$am), FUN = sd)

@@ -1,0 +1,20 @@
+#gvlma()
+
+#x <- gvlma(fit)
+
+#x <- gvlma(Y ~ X, data = mydata)
+
+#summary(x)
+
+
+#df <- "C:/homosc.csv"
+
+library(gvlma)
+df <- read.csv("C:\\homosc.csv")
+str(df)
+x <- gvlma(DV ~ IV, data = df)
+#summary(x)
+#Heteroscedasticity
+xx <-(summary(x$GlobalTest$DirectionalStat4$pvalue))
+print(xx[1])
+
