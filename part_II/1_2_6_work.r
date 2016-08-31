@@ -1,0 +1,1 @@
+col_median <- apply(my_df[sapply(my_df, is.numeric)], MARGIN = 2, FUN = median)
